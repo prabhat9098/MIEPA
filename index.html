@@ -42,9 +42,32 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    
 </head>
 
 <body>
+
+  <!-- INAUGURATION CURTAIN -->
+<div id="curtain-wrapper">
+
+  <div class="curtain left"></div>
+  <div class="curtain right"></div>
+
+  <div class="curtain-center">
+    <div class="spotlight"></div>
+
+    <h1>MIEPA</h1>
+    <p>Official Website Inauguration</p>
+
+    <button id="openCurtainBtn" class="inaugurate-btn">
+      🚩 Click to Inaugurate
+    </button>
+  </div>
+
+</div>
+
+
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -729,7 +752,7 @@
             <img src="img/images/m44.jpg" style="width:100%; height:290px; object-fit:cover;">
             <div style="padding:15px;">
                 <div style="font-size:16px; font-weight:700; color:#000;">
-                    Hon. shri Ranjit Singh Deol 
+                    Hon. shri Ranjit Singh Deol (I.A.S)
                 </div>
                 <div style="font-size:14px; color:#666; font-weight:400;">
                     Principal Secretary,<br>
@@ -743,7 +766,7 @@
             <img src="img/images/m33.png" style="width:100%; height:290px; object-fit:cover;">
             <div style="padding:15px;">
                 <div style="font-size:16px; font-weight:700; color:#000;">
-                    Hon. shri Sachindra Pratap Singh 
+                    Hon. shri Sachindra Pratap Singh (I.A.S)
                 </div>
                 <div style="font-size:14px; color:#666; font-weight:400;">
                     Commissioner ,<br>
@@ -765,7 +788,7 @@
             <img src="img/images/m77.jpg" style="width:100%; height:290px; object-fit:cover;">
             <div style="padding:15px;">
                 <div style="font-size:16px; font-weight:700; color:#000;">
-                    Hon. shri Sanjay Yadav 
+                    Hon. shri Sanjay Yadav (I.A.S)
                 </div>
                 <div style="font-size:14px; color:#666; font-weight:400;">
                     State Project Director,<br>
@@ -781,7 +804,7 @@
             <img src="img/images/m99.png" style="width:100%; height:290px; object-fit:cover;">
             <div style="padding:15px;">
                 <div style="font-size:16px; font-weight:700; color:#000;">
-                    Hon. shri Rahul Rekhawar
+                    Hon. shri Rahul Rekhawar (I.A.S)
                 </div>
                 <div style="font-size:14px; color:#666; font-weight:400;">
                     Director MIEPA,<br>
@@ -1312,6 +1335,24 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+   <script>
+  document.getElementById("openCurtainBtn").addEventListener("click", () => {
+
+    const wrapper = document.getElementById("curtain-wrapper");
+
+    wrapper.classList.add("curtain-open");
+
+    setTimeout(() => {
+      wrapper.remove();
+    }, 3800);
+
+  });
+</script>
+
+
+
+
 </body>
 
 </html>
